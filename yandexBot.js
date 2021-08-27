@@ -4,7 +4,8 @@
 // @version      0.1
 // @description  try to take over the world!
 // @author       TsapovaOlga
-// @match        https://ya.ru/
+// @match        https://ya.ru/*
+// @match        https://yandex.ru/*
 // @grant        none
 // ==/UserScript==
 
@@ -19,7 +20,7 @@ if (btn !==undefined) {
     btn.click();
 }else {
     for (let i=0; i<links.length; i++){
-        if (links[i].href.includes('музыкалка-онлайн.рф')){
+        if (links[i].href.includes('https://xn----7sbab5aqcbiddtdj1e1g.xn--p1ai')){
             let link = links[i];
             link.click();
             console.log("Нашел строку"+links[i]);
