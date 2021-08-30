@@ -50,7 +50,7 @@ if (btn !==undefined) {
             break;
         }
     }
-    if (document.querySelector('.pager__item_kind_page').innerText == "5") {
+    if (document.querySelector('[aria-label="Текущая страница 5"]')) {
         let nextYandexPage = false;
         location.href = "https://ya.ru";
 }
