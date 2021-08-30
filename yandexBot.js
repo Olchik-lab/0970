@@ -10,9 +10,9 @@
 // @grant        none
 // ==/UserScript==
 
-let keywords = ["как звучит флейта","кларнет"];
+let keywords = ["кофе машина","как звучит флейта","кларнет"];
 let btn = document.getElementsByClassName("button mini-suggest__button button_theme_search")[0];
-let nextBtn = document.getElementsByClassName("link link_theme_none lin…xt i-bem link_js_inited")[0];
+let nextBtn = document.getElementsByClassName("pager__item_kind_next")[0];
 let yandexInput = document.getElementsByName("text")[0];
 let links = document.links;
 let keyword = keywords[getRandom(0,keywords.length)];
@@ -50,7 +50,7 @@ if (btn !==undefined) {
             break;
         }
     }
-    if (document.querySelector('.pager__item pager__item_current_yes pager__item_kind_page').innerText == 5) {
+    if (document.querySelector('.pager__item_kind_page').innerText == "5") {
         let nextYandexPage = false;
         location.href = "https://ya.ru";
 }
